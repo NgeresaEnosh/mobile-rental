@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".ProfileActivity">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:text="Rental APP"
+    android:textSize="50dp"
+    android:textStyle="bold" />
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:src="@drawable/person"
+    android:contentDescription="Profile Image" />
+
+<EditText
+    android:id="@+id/editTextName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Name"
+    android:textStyle="bold"
+    android:layout_margin="20dp"/>
+
+<EditText
+    android:id="@+id/editTextSurname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Surname"
+    android:textStyle="bold"
+    android:layout_margin="20dp"/>
+
+<EditText
+    android:id="@+id/editTextDOB"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Date of Birth (YYYY-MM-DD)"
+    android:layout_margin="20dp"
+    android:textStyle="bold"/>
+
+<Spinner
+    android:id="@+id/spinnerGender"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_margin="20dp"/>
+
+<Button
+    android:id="@+id/buttonSave"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Save profile"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/red"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="30dp"/>
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomnavigator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:itemBackground="@color/blue"
+    app:itemIconTint="@drawable/selector"
+    app:itemTextColor="@color/white"
+    app:labelVisibilityMode="labeled"
+    app:menu="@menu/menu" />
+
+</LinearLayout>
