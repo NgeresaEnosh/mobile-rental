@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RepairActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repair"
+        android:text="Repair"
+        android:textColor="@color/blue"
+        android:textSize="40dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectrepair"
+        android:text="Select repair type:"
+        android:textStyle="bold"
+        android:layout_below="@id/repair"
+        android:textSize="25dp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnElectricity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:layout_below="@+id/selectrepair"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Electricity Repair"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnElectricity"
+        android:text="Water Repair"
+        android:backgroundTint="@color/blue"
+        android:textSize="20dp"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/btnHouseRenovation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWater"
+        android:text="House Renovation"
+        android:backgroundTint="@color/blue"
+        android:textSize="20dp"
+        android:layout_margin="20dp"/>
+
+    <!-- Description Box (CardView) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/descriptionCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHouseRenovation"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <EditText
+            android:id="@+id/repairDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe the repair needed..."
+            android:padding="10dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionCardView"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:backgroundTint="@color/blue"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/blue"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>
