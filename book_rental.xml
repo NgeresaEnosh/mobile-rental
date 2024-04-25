@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7B205"
+    android:orientation="vertical"
+    tools:context=".BookRentalActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="BOOK HERE"
+        android:textColor="@color/white"
+        android:layout_marginBottom="40dp"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:hint="Name"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:hint="Email Address"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:hint="Phone Number"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:hint="Select Date"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/buttonBookrental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/red"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
